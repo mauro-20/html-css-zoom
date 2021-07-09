@@ -55,3 +55,49 @@ margin-right: 5px;
   background-color: #212122;
   cursor: pointer;
 }
+
+/* main */
+main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 50px);
+  background-color: #1a1a1a;
+}
+
+main .arrow-left, main .arrow-right{
+  width: 50px;
+  height: 80px;
+  background-color: bisque;
+}
+
+main .main-content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 100%;
+  /* background-color: blanchedalmond; */
+}
+
+.main-content .card{
+  position: relative;
+  height: calc(100% / 5 - 6px);
+  width: calc(100% / 5 - 6px);
+  margin: 3px;
+  border-radius: 5px;
+  background-image: url(../img/Ugo-Fantozzi.jfif);
+}
+
+.main-content .card .name{
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+  padding: 0 10px 0 5px ;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #0000004d;
+}
+
+.main-content .card .name > i{
+  color: #ff5c5c;
+}
