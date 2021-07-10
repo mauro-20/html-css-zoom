@@ -10,11 +10,21 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
+/* button */
+.btn-red{
+  height: 30px;
+  padding: 0 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e02828;
+}
+
 /* header */
 header{
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 40px;
   background-color: #1a1a1a;
 }
 
@@ -61,7 +71,7 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 90px);
   background-color: #1a1a1a;
 }
 
@@ -93,7 +103,6 @@ main .main-content{
   flex-wrap: wrap;
   width: 80%;
   height: 100%;
-  /* background-color: blanchedalmond; */
 }
 
 .main-content .card{
@@ -103,6 +112,7 @@ main .main-content{
   margin: 3px;
   border-radius: 5px;
   background-image: url(../img/Ugo-Fantozzi.jfif);
+  background-size: cover;
 }
 
 .main-content .card .name{
@@ -119,3 +129,52 @@ main .main-content{
   color: #ff5c5c;
 }
 
+/* footer */
+footer{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222426;
+  text-align: center;
+}
+
+.footer-left, .footer-center, .footer-right{
+  display: flex;
+}
+
+footer .ft-item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 46px;
+  min-width: 80px;
+  padding: 0 15px;
+  margin: 2px 0;
+  border-radius: 5px;
+  color: #aaabac;
+  font-size: 12px;
+}
+
+footer .ft-item i:first-child, footer .ft-record i{
+  font-size: 23px;
+}
+
+footer .footer-left{
+  margin-left: 30px;
+}
+
+footer .fa-angle-up{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+footer .ft-item.color-green{
+  color: #23d959;
+}
+
+footer .footer-right{
+  margin-right: 30px;
+}
