@@ -20,6 +20,10 @@ body{
   background-color: #e02828;
 }
 
+.btn-red:hover{
+  background-color: #da4242;
+}
+
 /* header */
 header{
   display: flex;
@@ -75,7 +79,7 @@ main{
   background-color: #1a1a1a;
 }
 
-main .arrow-left, main .arrow-right{
+main .arrow{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,7 +156,7 @@ footer .ft-item{
   min-width: 80px;
   padding: 0 15px;
   margin: 2px 0;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #aaabac;
   font-size: 12px;
 }
@@ -167,8 +171,16 @@ footer .footer-left{
 
 footer .fa-angle-up{
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer .ft-item .partecipant-num{
+  position: absolute;
+  right: 20px;
+  top: 0;
 }
 
 footer .ft-item.color-green{
@@ -177,4 +189,17 @@ footer .ft-item.color-green{
 
 footer .footer-right{
   margin-right: 30px;
+}
+
+/* hover */
+footer .ft-item:hover, .header-right .view:hover{
+  background-color: #2e2e2e;
+}
+
+footer .fa-angle-up:hover{
+  background-color: #404040;
+}
+
+main .arrow:hover{
+  background-image: linear-gradient(#232323, #161616);
 }
